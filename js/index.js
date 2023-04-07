@@ -114,9 +114,11 @@ class CourseController {
     this.view.selectBtn.addEventListener('click', (e) =>{
         e.preventDefault();
         if(Number(this.view.counterNum.textContent) >= 0){
+            document.querySelector("#selectedCourses").innerHTML = "";
             if (confirm("You have chosen " + this.view.counterNum.textContent + " credits for this semester. You cannot change once you submit. Do you want to confirm?") == true) {
                 document.querySelectorAll('.select').forEach((el) => {
-                  document.querySelector("#selectedCourses").appendChild(el);
+                    let newEl = el.cloneNode(true);
+                  document.querySelector("#selectedCourses").appendChild(newEl);
                 })
               } 
           
