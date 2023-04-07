@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+}
+ul p{
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    margin: 0;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+}
+#available, #selected{
+    height: 300px;
+    width: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+   
+}
+.list li:nth-child(2n-1){
+    background-color: rgb(221, 239, 221);
+
+}
+ul{
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    top: 0;
+    left:0;
+    
+}
+li {
+    font-size: 0.9em;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+}
+.list li.select{
+    background-color: deepskyblue;
+}
+li p {
+    border: none;
+}
+#counter{
+    text-align: center;
+}
